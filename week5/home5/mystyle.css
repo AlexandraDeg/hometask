@@ -1,0 +1,146 @@
+p,
+header,
+main,
+section,
+aside,
+footer {
+    border: 1px solid red;
+}
+
+header,
+footer {
+    flex: 0 0 content;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vw;
+}
+
+section {
+    flex: 1;
+}
+
+/*aside {
+    width: 20vh;
+}*/
+
+.header {
+    padding: 120px 145px;
+    background-image: url(https://adhimaab.files.wordpress.com/2018/03/cropped-blue-wallpaper-22-1680x1050.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.menu {
+    padding: 20px 145px;
+    background-color: #003395;
+
+}
+
+.menu-link {
+    display: flex;
+    margin-right: 62px;
+    justify-content: space-between;
+    color: black;
+    list-style: none;
+}
+
+footer {
+    /*position: absolute;
+    width: 1440px;*/
+    /*height: 148px;*/
+    /*left: 0px;
+    top: 1313px;*/
+    display: inline;
+    background: linear-gradient(180deg, #003395 0%, #00205F 100%);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    color: #00205F;
+}
+
+.flex-container,
+.flex-container1,
+.flex-container2 {
+    border: 1px solid red;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+section {
+    display: inline;
+    width: 62vw;
+}
+
+
+aside {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 30vw;
+}
+
+.flex-container,
+.flex-container1,
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.flex-container-aside,
+{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+align-content: space-around;
+}
+
+.flex-container-aside1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.h5,
+.h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-aside,
+.flex-container-aside1 {
+
+    margin: 20px 30px 20px 30px;
+    padding: 20px 30px 20px 30px;
+}

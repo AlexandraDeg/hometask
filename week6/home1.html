@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background: blue;
+            grid-area: header;
+
+        }
+
+        .sidebar {
+            background: yellow;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background: green;
+            grid-area: main;
+        }
+
+        .footer {
+            background: orange;
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 10% 55% 30%;
+            grid-template-rows: 10% 55% 30%;
+            height: 100vh;
+            grid-template-areas:
+                "header header header header "
+                "main main  main sidebar "
+                "footer footer footer footer";
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10%;
+            justify-content: center;
+            align-content: space-around;
+            grid-area: footer;
+        }
+
+        .cellfooter1,
+        .cellfooter2,
+        .cellfooter3,
+        .cellfooter4 {
+            display: inline;
+            margin: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Гриды</h1>
+    <div class="container">
+        <header class="header">Шапка страницы</header>
+        <aside class="sidebar">Боковая часть</aside>
+        <main class="main">Основная часть</main>
+        <footer class="footer">
+            <div class="cellfooter1" style="background-color: beige;">{Секция футера1}</div>
+            <div class="cellfooter2" style="background-color: beige;">{Секция футера2}</div>
+            <div class="cellfooter3" style="background-color: beige;">{Секция футера3}</div>
+            <div class="cellfooter4" style="background-color: beige;">{Секция футера4}</div>
+        </footer>
+    </div>
+</body>
+
+</html>

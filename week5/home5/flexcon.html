@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+    <style>
+        p,
+        header,
+        main,
+        section,
+        aside,
+        footer {
+            border: 1px solid red;
+        }
+
+        .header,
+        .aside,
+        .flex-container,
+        .footer-container {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-size: larger;
+        }
+
+        .header {
+            float: left;
+            height: 10vw;
+        }
+
+        header,
+        footer {
+            display: inline;
+
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+
+
+        }
+
+        body {
+            display: flex;
+            flex-flow: column;
+            /*min-height: 100vw;*/
+        }
+
+        section {
+            display: inline;
+            flex: 65vw;
+        }
+
+        .had {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: center;
+            align-content: space-around;
+        }
+
+        .flexp {
+            display: flex;
+            flex: 1 0 300px;
+            margin: 20px 30px 20px 30px;
+            padding: 20px 30px 20px 30px;
+
+
+        }
+
+        .flexp_s {
+            display: flex;
+            flex: 2 0 600px;
+            margin: 20px 30px 20px 30px;
+            padding: 20px 30px 20px 30px;
+
+        }
+
+        aside {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            width: 35vw;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+
+        }
+
+        .footc {
+            margin: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <header class="header">Шапка страницы</header>
+    <main class="main">
+
+        <section>
+            <h2 class="had">Основная часть</h2>
+            <div class="flex-container">
+                <p class="flexp">Еще 1</p>
+                <p class="flexp">Еще 2</p>
+                <p class="flexp_s">Еще 3</p>
+
+            </div>
+        </section>
+        <aside class="aside">Боковая часть</aside>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footc">Секция footer1</p>
+            <p class="footc">Секция footer2</p>
+            <p class="footc">Секция footer3</p>
+            <p class="footc">Секция footer4</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Прага</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/804/804383.png" type="image/png">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        img {
+            width: 50vw;
+        }
+
+        .menu {
+            text-decoration: none;
+            color: #000;
+            padding: 4px;
+            font-weight: bolder;
+        }
+
+        #wiki {
+            color: red;
+        }
+
+        nav .menu {
+            color: violet;
+        }
+
+        nav .menu {
+            text-decoration: underline;
+        }
+
+        ::first-letter {
+            color: #990000;
+        }
+
+        #logo {
+            width: 100px;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" scr="https://cdn-icons-png.flaticon.com/512/3758/3758146.png">Супер Пупер Туры
+        <nav>
+            <a class="mainmenu" href="direction.html">Наши направления></a>
+            <a class="menu" href="about.html">О нас></a>
+            <a class="menu" href="contacts.html">Контакты></a>
+        </nav>
+    </header>
+    <h1>Прага</h1>
+    <h2>Столица Чехии</h2>
+    <img src="https://sportishka.com/uploads/posts/2022-04/1650510172_1-sportishka-com-p-praga-stolitsa-chekhii-dostoprimechatelnos-1.jpg"
+        alt="Прага">
+    <p>Пра́га — статусный город и столица Чешской Республики, административный центр
+        Среднечешского
+        края и
+        двух его
+        районов: Прага-Восток и Прага-Запад.</p>
+    <div><a href="https://ru.wikipedia.org/wiki/Прага">Подробнее читай на сайте
+            <span id="wiki">википедия</span></a>
+    </div>
+    <ol>
+        <li>Первые исторические сведения о поселениях славян на территории современного города относятся к VI веку н. э.
+            В X веке Прага стала столицей <b>Чешского государства</b>, в конце этого же столетия была выстроена рыночная
+            площадь.</li>
+
+        <li>В первой половине XIII века вокруг каменных построек в районе площади стали возводить крепостные стены.</li>
+        <li>Конкурировавшая в средние века наравне с <i>Парижем</i> за звание столицы Европы Прага, оказавшись вне
+            первой волны
+            глобализации в XVI веке, стала периферийным её городом.</li>
+    </ol>
+    <div>
+    </div>
+    <footer>
+        <nav>
+            <a class="menu" href="direction.html">Наши направления></a>
+            <a class="menu" href="about.html">О нас></a>
+            <a class="menu" href="contacts.html">Контакты></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
