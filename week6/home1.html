@@ -30,13 +30,14 @@
 
         .container {
             display: grid;
-            grid-template-columns: 10% 55% 30%;
-            grid-template-rows: 10% 55% 30%;
-            height: 100vh;
+            grid-template-columns: 1fr 1fr 200px;
+            grid-template-rows: 100px 2fr 1fr 80px;
+            height: 600px;
+            width: 100%;
             grid-template-areas:
-                "header header header header "
-                "main main  main sidebar "
-                "footer footer footer footer";
+                "header header header header header "
+                "main content-1  content-1 sidebar siderbar"
+                "main content-2 content-3 sidebar sidebar";
         }
 
         .footer {
@@ -57,7 +58,17 @@
             margin: 10px 10px 10px 10px;
         }
 
-        .content-1 {}
+        .content-1 {
+            grid-area: content-1;
+        }
+
+        .content-2 {
+            grid-area: content-2;
+        }
+
+        .content-3 {
+            grid-area: content-3;
+        }
     </style>
 </head>
 
