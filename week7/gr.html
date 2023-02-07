@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background: pink;
+            grid-area: header;
+
+        }
+
+        .sidebar {
+            background: yellow;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background: green;
+            grid-area: main;
+        }
+
+        .footer {
+            background: orange;
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 15% 1fr 15%;
+            height: 90vh;
+            width: 100vh;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main"
+                "footer footer footer footer";
+        }
+
+        .nav-item {
+            padding: 5px;
+            font-size: 2em;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 95%;
+        }
+
+        .pict {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .pictonteiner {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Гриды</h1>
+    <div class="container">
+        <header class="header">header
+            <nav class="menu">
+                <span class="nav-item">menu-1</span>
+                <span class="nav-item">menu-2</span>
+                <span class="nav-item">menu-3</span>
+            </nav>
+        </header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">content
+            <div class="pictonteiner"><img class="pict" src="orca.jpg" alt=""></div>
+        </main>
+        <footer class="footer">footer</footer>
+
+    </div>
+</body>
+
+</html>

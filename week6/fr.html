@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+        .maincontainer {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 10% 70% 20%;
+            height: 90vh;
+        }
+
+        .header {
+            grid-column: 1/4;
+            text-align: center;
+            font-weight: bolder;
+            font-size: large;
+            background-color: #b1adad;
+        }
+
+        .main {
+            display: grid;
+            font-weight: bolder;
+            text-align: center;
+            background-color: #e7eba0;
+        }
+
+        .aside {
+            text-align: center;
+            font-weight: bolder;
+            background-color: #90e296;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .section3 {
+            grid-column: 1/3;
+        }
+
+        .section1,
+        .section2,
+        .section3 {
+            margin: 5px;
+            background-color: #f8c668;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column: 1/4;
+            align-items: center;
+            text-align: center;
+            font-weight: bolder;
+            background-color: #b1adad;
+        }
+
+        .footersection1,
+        .footersection2,
+        .footersection3,
+        .footersection4 {
+            margin: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <header class="header">
+            <p>[Шапка страницы]</p>
+        </header>
+        <main class="main">
+            <p>[Основная часть]</p>
+            <div class="sections">
+                <div class="section1">
+                    <p>[Ещё 1]</p>
+                </div>
+                <div class="section2">
+                    <p>[Ещё 2]</p>
+                </div>
+                <div class="section3">
+                    <p>[Ещё 3]</p>
+                </div>
+            </div>
+        </main>
+        <aside class="aside">
+            <p>[Боковая область]</p>
+        </aside>
+        <footer class="footer">
+            <div class="footersection1">
+                <p>[Секция футера 1]</p>
+            </div>
+            <div class="footersection2">
+                <p>[Секция футера 2]</p>
+            </div>
+            <div class="footersection3">
+                <p>[Секция футера 3]</p>
+            </div>
+            <div class="footersection4">
+                <p>[Секция футера 4]</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
