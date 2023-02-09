@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-block {
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .header-block {
+        width: 200px;
+        background-color: blueviolet;
+        margin-bottom: 0;
+    }
+}
