@@ -41,7 +41,7 @@
 
         .h1 {
             font-size: large;
-            color: aliceblue;
+            color: white;
         }
 
 
@@ -59,8 +59,10 @@
     <h1>Flexbox</h1>
     <header class="header">Заголовок</header>
     <main class="main">
-        <aside class="aside">Сбоку
-            <img src="/@.png" alt="">
+        <aside class="aside">
+            <div class="conteiner-aside">
+                <img src="/@.png" class="img-fluid">
+            </div>
         </aside>
         <section class="section">Icon request
             <h1>Icon request</h1>
@@ -72,11 +74,20 @@
         </section>
 
     </main>
-    <footer class="footer">Футер
+    <footer class="footer">
         <div class="row rowCustom">
-            <div class="col-sm-12 ">некий текст</div>
-            <div class="col-sm-12">некий текст</div>
-        </div>
+            <div class="col-sm-12 ">
+                <div class="conteiner-footer1">
+                    <img src="/Rectangle (8).png" class="img-fluid">
+                </div>
+                <div class="text">Grab the pack</div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="conteiner-footer2">
+                    <img src="/Rectangle (9).png" class="img-fluid">
+                </div>
+            </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
