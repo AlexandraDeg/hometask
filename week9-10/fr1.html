@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Adlam+Unjoined:wght@600&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <style>
         p,
@@ -35,6 +40,8 @@
             flex-direction: row;
             justify-content: stretch;
             background-color: black;
+
+
         }
 
         body {
@@ -43,18 +50,40 @@
             min-height: 100vw;
         }
 
-        .h1 {
-            font-size: large;
-            color: #fff;
-        }
-
 
         aside {
+            display: flex;
+            align-items: center;
             width: 50vh;
         }
 
-        section {
+        .btn-round {
+            border-radius: 40px;
+            background-color: violet;
+            color: #fff;
+        }
+
+        .section {
+
+            display: flex;
             flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 35vw;
+            margin: 20px 20px 20px 20px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .section {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #fff;
+
+
         }
 
         .conteiner-footer1 {
@@ -72,7 +101,7 @@
         }
 
         footer .intro {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Manrope', sans-serif;
             font-size: 2em;
             text-transform: uppercase;
             font-weight: 900;
@@ -80,7 +109,7 @@
         }
 
         footer .subintro {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Manrope', sans-serif;
             font-size: 0.8em;
             text-transform: uppercase;
             font-weight: 500;
@@ -104,8 +133,8 @@
 </head>
 
 <body>
-    <h1>Flexbox</h1>
-    <header class="header">Заголовок</header>
+    <h1></h1>
+    <header class="header"></header>
     <main class="main">
         <aside class="aside">
             <div class="conteiner-aside">
@@ -113,12 +142,16 @@
             </div>
         </aside>
         <section class="section">Icon request
-            <h1>Icon request</h1>
-            <div class="text">If you find that the pack is missing any icons, feel free to send me a message and I will
-                do my best to
-                create one. Purchasing the pack will give you access to any future updates.</div>
 
-            <div class="btn"><button>Get in touch</button></div>
+            <h1>Icon request</h1>
+            <div class="text">If you find that the pack is missing any icons, feel free to send me a
+                <br>message and I will do my best to create one. Purchasing the pack
+                <br>will give you access to any future updates.
+            </div>
+
+
+            <Div class="text-center"><button type="submit" class="btn btn-block btn-round btn-login">Get in
+                    touch</button>
         </section>
 
     </main>
@@ -132,26 +165,28 @@
                             <span class="intro" id="mainIntro">Grab the pack</span></br>
                             <span class="subintro" id="secondIntro">By purchasing the pack you will get access to future
                                 additions and updates – for life!</span></br>
-                            <div class="btn"><button>Buy now – $14.99</button></div>
+
+                            <Div class="text-center"><button type="submit" class="btn  btn-round">Buy
+                                    now – $14.99</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="conteiner-footer2">
-            <div class="container-2">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-text">
-                            <span class="intro" id="mainIntro">HYPICONS</span></br>
-                            <span class="subintro" id="secondIntro">Created by <a href="">@rathniley</a></span></br>
-                            <button type="button" class="btn btn-default" id="introBtn">Copyright © 2020. All rights
-                                reserved.</button>
+            <div class="conteiner-footer2">
+                <div class="container-2">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="intro-text">
+                                <span class="intro" id="mainIntro">HYPICONS</span></br>
+                                <span class="subintro" id="secondIntro">Created by <a href="">@rathniley</a></span></br>
+                                <button type="button" class="btn btn-default" id="introBtn">Copyright © 2020. All rights
+                                    reserved.</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
