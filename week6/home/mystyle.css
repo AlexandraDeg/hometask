@@ -1,4 +1,13 @@
-p,
+header {
+    display: flex;
+    width: 100%;
+    width: 1300px;
+    background-color: black;
+}
+
+
+
+/*p,
 header,
 main,
 section,
@@ -56,12 +65,12 @@ section {
 footer {
     /*position: absolute;
     width: 1440px;*/
-    /*height: 148px;*/
-    /*left: 0px;
+/*height: 148px;*/
+/*left: 0px;
     top: 1313px;*/
-    display: inline;
+/* display: inline;
     background: linear-gradient(180deg, #003395 0%, #00205F 100%);
-}
+}/*
 
 h2,
 h3,
@@ -98,15 +107,15 @@ section {
     display: flex;
     flex-direction: column;
     /*flex-wrap: wrap;*/
-    align-items: center;
+/*align-items: center;
     justify-content: center;
     align-content: space-around;
 }
 
 
-.h5,
+/*.h5,
 .h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
