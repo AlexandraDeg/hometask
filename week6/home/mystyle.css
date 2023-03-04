@@ -51,142 +51,87 @@ button-header:before {
     font-weight: bold;
 }
 
+.header-container,
+.header-button {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
 .flex-container-banner {
 
     display: flex;
-
+    max-width: 1300px;
+    width: 100%;
     padding-top: 322px;
     padding-bottom: 189px;
-    background-image: url(../../assets/images/header.png);
+    background-image: url(/assets/images/header.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 300;
     color: #F9F0DA;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
 
 main {
     display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1300px;
 }
 
-
-
-
-
-
-
-/*p,
-header,
-main,
-section,
-
-footer {
-    border: 1px solid red;
-}
-
-header,
-footer {
-    flex: 0 0 content;
-}
-
-.main {
-    flex: 1;
+.W1,
+.flex-text-banner {
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
-body {
+.container {
     display: flex;
-    flex-flow: column;
-    min-height: 100vw;
-}
-
-section {
-    flex: 1;
-}
-
-
-
-.header {
-    padding: 120px 145px;
-    background-image: url(https://adhimaab.files.wordpress.com/2018/03/cropped-blue-wallpaper-22-1680x1050.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.menu {
-    padding: 20px 145px;
-    background-color: #003395;
-
-}
-
-.menu-link {
-    display: flex;
-    margin-right: 62px;
-    justify-content: space-between;
-    color: black;
-    list-style: none;
-}
-
-footer {
-    /*position: absolute;
-    width: 1440px;*/
-/*height: 148px;*/
-/*left: 0px;
-    top: 1313px;*/
-/* display: inline;
-    background: linear-gradient(180deg, #003395 0%, #00205F 100%);
-}/*
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16pt;
-    color: #00205F;
-}
-
-.flex-container,
-.flex-container1,
-.flex-container2 {
-    border: 1px solid red;
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-
-section {
-    display: inline;
-    width: 62vw;
-}
-
-
-
-
-.flex-container,
-.flex-container1,
-.flex-container2 {
-    display: flex;
+    background-color: black;
+    max-width: 1300px;
+    width: 100%;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
-/*align-items: center;
-    justify-content: center;
-    align-content: space-around;
+    justify-content: flex-start;
 }
 
+h4,
+h3 {
+    color: white;
+    font-size: 300;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+}
 
-/*.h5,
-.h6 {
+.container1 {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . ."
+        ". . . . . .";
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . ."
+        ". . . . . .";
+}
+
+.footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+    background-color: black;
+    color: white;
+    font-size: 300;
+}
