@@ -1,8 +1,74 @@
 header {
+    display: inline-flex;
+    max-width: 1300px;
+    width: 100%;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: #F9F0DA;
+    justify-content: space-between;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input,
+button-header {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    background: #F9F0DA;
+    padding-left: 15px;
+}
+
+button-header {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #F15B42;
+    cursor: pointer;
+}
+
+button-header:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex-container-banner {
+
+    display: flex;
+    padding-top: 322px;
+    padding-bottom: 189px;
+    background-image: url(../home/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #F9F0DA;
+
+}
+
+main {
     display: flex;
     width: 100%;
-    width: 1300px;
-    background-color: black;
+    max-width: 1300px;
 }
 
 
