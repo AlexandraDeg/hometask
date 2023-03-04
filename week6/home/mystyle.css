@@ -54,9 +54,10 @@ button-header:before {
 .flex-container-banner {
 
     display: flex;
+
     padding-top: 322px;
     padding-bottom: 189px;
-    background-image: url(../home/header.png);
+    background-image: url(../../assets/images/header.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -70,6 +71,10 @@ main {
     width: 100%;
     max-width: 1300px;
 }
+
+
+
+
 
 
 
