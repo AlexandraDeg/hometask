@@ -3,9 +3,9 @@ header {
     max-width: 1300px;
     width: 100%;
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-weight: 300;
-    color: #F9F0DA;
+    color: #f9f0da;
     justify-content: space-between;
 }
 
@@ -29,7 +29,7 @@ input,
 input {
     width: 100%;
     height: 42px;
-    background: #F9F0DA;
+    background: #f9f0da;
     padding-left: 15px;
 }
 
@@ -39,14 +39,14 @@ input {
     position: absolute;
     top: 8px;
     right: 8px;
-    background: #F15B42;
+    background: #f15b42;
     cursor: pointer;
 }
 
 .button-header:before {
     content: "\f105";
     font-family: FontAwesome;
-    color: #F9F0DA;
+    color: #f9f0da;
     font-size: 20px;
     font-weight: bold;
 }
@@ -58,7 +58,6 @@ input {
 }
 
 .flex-container-banner {
-
     display: flex;
     max-width: 1300px;
     width: 100%;
@@ -69,10 +68,9 @@ input {
     background-size: cover;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 300;
-    color: #F9F0DA;
+    color: #f9f0da;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 main {
@@ -98,27 +96,16 @@ main {
     justify-content: flex-start;
 }
 
-
+h4,
 h3 {
     color: white;
-    font-size: 20px;
-    margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px;
-}
-
-h4 {
-    color: white;
-    font-size: 10px;
+    font-size: 30px;
     margin: 15px 15px 15px 15px;
     padding: 15px 15px 15px 15px;
 }
 
 article p {
-    display: grid;
-    justify-items: center;
-
     color: #f9f0da;
-
 }
 
 .container1 {
@@ -148,5 +135,5 @@ article p {
     display: flex;
     background-color: black;
     color: white;
-    font-size: 300;
+    font-size: 30px;
 }
