@@ -64,7 +64,7 @@ input {
     width: 100%;
     padding-top: 322px;
     padding-bottom: 189px;
-    background-image: url(/assets/images/header.png);
+    background-image: url(..//../assets/images/header.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
